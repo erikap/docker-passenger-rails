@@ -5,6 +5,7 @@ FROM phusion/passenger-ruby21:0.9.15
 
 # Set correct environment variables.
 ENV HOME /root
+ENV RAILS_ENV production
 
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
