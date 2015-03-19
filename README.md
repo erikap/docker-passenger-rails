@@ -16,7 +16,7 @@ Configure the production database in Rails (`config/database.yml`) such that the
 
 ## Running your Rails application in Phusion Passenger
 
-    dr run --name my-rails-app \
+    docker run --name my-rails-app \
            --volume /path/to/rails/app:/home/app/webapp \
            --link my-database-container:database \
            -e "SECRET_KEY_BASE=my-secret-production-key-for-rails" \
